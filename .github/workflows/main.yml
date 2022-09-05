@@ -12,4 +12,4 @@ jobs:
           token: ${{ secrets.ARGO_TOKEN }}
           insecure: "true"
           action: sync
-          appName: "self-servce-poc-argo-example-app-${{ github.head_ref }}"
+          appName: "self-servce-poc-argo-example-app-${{ github.ref }}"
