@@ -1,0 +1,14 @@
+name: Argo Sync
+on: [ push, pull_request ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Sync ArgoCD Application
+        uses: omegion/argocd-actions@v1
+        with:
+          address: "34.77.100.39"
+          token: ${{ secrets.ARGO_TOKEN }}
+          action: sync
+          appName: "self-servce-poc-argo-example-app-${{ github.head_ref }}"
