@@ -13,3 +13,4 @@ jobs:
           insecure: "true"
           action: sync
           appName: "self-servce-poc-argo-example-app-${{ github.ref_name }}"
+          imageTag: "dev"
