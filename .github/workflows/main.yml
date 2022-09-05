@@ -6,9 +6,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Sync ArgoCD Application
-        uses: omegion/argocd-actions@v1
+        uses: butterfly1924/argocd-actions@master
         with:
           address: "34.77.100.39"
           token: ${{ secrets.ARGO_TOKEN }}
+          insecure: "true"
           action: sync
           appName: "self-servce-poc-argo-example-app-${{ github.head_ref }}"
