@@ -12,7 +12,7 @@ env:
   GITHUB_SHA: ${{ github.sha }} 
   GITHUB_REF: ${{ github.ref }} 
   IMAGE: [IMAGE_NAME]
-  REGISTRY_HOSTNAME: gcr.io
+  REGISTRY_HOSTNAME: eu.gcr.io
 
 
 jobs:
