@@ -8,7 +8,7 @@ on: [ push, pull_request ]
 env:
   GITHUB_SHA: ${{ github.sha }} 
   GITHUB_REF: ${{ github.ref }} 
-  IMAGE: [IMAGE_NAME]
+  IMAGE: argo-example-app
   REGISTRY_HOSTNAME: eu.gcr.io
 
 
